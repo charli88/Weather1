@@ -1,0 +1,42 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Weather</title>
+		
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<script src="http://code.jquery.com/jquery-2.1.4.min.js" ></script>
+		<script src="js/script.js" ></script>	
+		<img src="images/bg.jpg"
+				style="width:100%;height:100%;position:absolute;top:0;left:0;z-index:-5000;">
+	
+	</head> 
+	<body>
+	
+		<div class="header">
+			
+			<a class="button" href="index.html">Home</a>
+			
+			<select id = "select">
+				<option style="color:gray" value="null">------Выберите один вариант-------</option>
+	
+				<option value="main">Температура и давления</option>
+				<option value="weather">Облачность</option>
+				<option value="wind">Ветер - Направления и скорость</option>			
+				<option value="sys">Страна,Закат и Восход</option>	
+				<option value="coord">Координаты - долгота и широта</option>	
+				
+			</select>
+			
+			<input type="text" id="input">
+			<button type="button" id="submit">Search!</button> 
+		</div>
+		
+		<div id="content" class="weather-list">
+			<!--content-->
+		</div>
+	
+	</body>	
+</html>
+
+
+
